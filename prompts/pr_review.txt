@@ -1,0 +1,11 @@
+PR Review Prompt
+
+Write a detailed, structured pull request summary with the following sections:
+
+1) What: Briefly describe the purpose and scope of the PR, including the main problem addressed and the high-level solution.
+2) Background/Context: Explain the motivation for the change and any relevant context.
+3) Technical Details: Clearly outline the technical approach, including key changes, refactoring, or new functionality. Use lists, code snippets, or diagrams (e.g., mermaid) when helpful.
+4) Changes Made: List the main changes (additions, removals, refactorings, test updates) in bullet points.
+5) Technical Impact: Highlight how the codebase has been improved (e.g., simplification, enhanced tests, performance gains).
+6) Benefits: Summarize the main advantages for maintainers and users (e.g., reduced complexity, improved reliability).
+7) (Optional) Visual Aids: Include code snippets or diagrams to clearly illustrate before/after scenarios.
