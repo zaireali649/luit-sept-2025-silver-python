@@ -5,7 +5,7 @@ import os          # Interacting with the operating system (files, paths, env va
 import datetime    # Working with dates and times
 import string      # ASCII letters, digits, punctuation
 import unicodedata # Unicode database (lets you work with emoji/characters)
-import uuid
+import uuid        # UUID Library
 
 # --- Third-Party Library (requires pip install) ---
 import matplotlib.pyplot as plt  # Matplotlib: data visualization
@@ -57,6 +57,10 @@ plt.xlabel("X values")          # Label the X-axis
 plt.ylabel("Y = X^2")           # Label the Y-axis
 plt.show()                      # Display the plot in a window
 
+# get a uuid
 uuid_value = str(uuid.uuid4())
+
+# print uuid
 print(uuid_value)
+# print firt 8 characters of uuid
 print(uuid_value[:8])
