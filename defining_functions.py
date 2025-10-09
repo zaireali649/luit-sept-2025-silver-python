@@ -30,6 +30,7 @@ def is_large_number(x: int) -> bool:
     else:
         return False  # Number is not large
 
+
 if __name__ == "__main__":
     # Generate two random integers between 0 and 10
     num1: int = random.randint(0, 10)

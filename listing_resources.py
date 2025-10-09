@@ -1,4 +1,4 @@
-from helpers import *
+from helpers import list_buckets, describe_instances, get_ec2_client, get_s3_client
 
 
 def print_bucket_names(s3_client: object) -> None:
@@ -31,7 +31,7 @@ def print_instance_ids(ec2_client: object) -> None:
     """
     # Retrieve a list of EC2 instances using a helper function
     instances = describe_instances(ec2_client)
-    
+
     # Extract instance IDs into a list
     instance_ids: list[str] = []
     for instance in instances:
