@@ -1,0 +1,31 @@
+name: Ruff
+
+on:  
+  pull_request:
+
+jobs:
+  ruff:
+    name: Ruff format & lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Ruff
+        run: |
+          python -m pip install --upgrade pip
+          pip install ruff
+
+      - name: Check formatting (no changes allowed)
+        run: |
+          ruff format --check . || (echo "Formatting issues found. Run 'ruff format .' locally to fix." && exit 1)
+
+      - name: Lint (fail on any violations)
+        run: |
+          ruff check --diff . || (echo "Lint issues found. Run 'ruff check --fix .' locally to fix." && exit 1)
