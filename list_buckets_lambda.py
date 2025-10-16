@@ -1,6 +1,7 @@
 import json
 import boto3  # AWS SDK for Python, used to interact with AWS services like S3
 
+
 def lambda_handler(event, context):
     # Create an S3 client to communicate with the S3 service
     s3 = boto3.client("s3")
@@ -19,7 +20,4 @@ def lambda_handler(event, context):
         bucket_names.append(bucket["Name"])
 
     # TODO implement
-    return {
-        'statusCode': 200,
-        'body': json.dumps(bucket_names)
-    }
+    return {"statusCode": 200, "body": json.dumps(bucket_names)}
