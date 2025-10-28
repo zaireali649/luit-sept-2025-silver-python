@@ -1,16 +1,23 @@
-name: Run Python
+name: Run Python Script
 
 on:  
   pull_request:
 
 jobs:
-  hello-world:
-    name: Run hello world
+  python-script:
+    name: Run python script
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Set up AWS CLI
+        uses: aws-actions/configure-aws-credentials@v3
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -20,6 +27,7 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
+          pip install boto3
 
       - name: Run python script
         run: |
