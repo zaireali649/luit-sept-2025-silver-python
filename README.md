@@ -28,15 +28,45 @@ This repository is for students learning basic Python for the first time.
 
 ## Getting Started
 
-1. **Clone the Repository**  
-   Open your terminal and run:
-   ```bash
-   git clone <your-repo-url>
-   cd luit-sept-2025-silver-python
-   ```
+### GitHub Setup Options
 
-2. **Run the Hello World Program**  
-   Make sure you have Python 3 installed. Then run:
+Choose the method that works best for your computer setup:
+
+#### Option 1: GitHub Desktop (Recommended for Beginners)
+1. **Download GitHub Desktop** from [desktop.github.com](https://desktop.github.com)
+2. **Sign in** with your GitHub account
+3. **Clone this repository**:
+   - Click "Clone a repository from the Internet"
+   - Enter the repository URL
+   - Choose a local folder to save the project
+   - Click "Clone"
+
+#### Option 2: VS Code with GitHub Extension
+1. **Install VS Code** from [code.visualstudio.com](https://code.visualstudio.com)
+2. **Install the GitHub Extension**:
+   - Open VS Code
+   - Go to Extensions (Ctrl+Shift+X)
+   - Search for "GitHub Pull Requests and Issues"
+   - Install the extension
+3. **Clone the repository**:
+   - Press Ctrl+Shift+P
+   - Type "Git: Clone"
+   - Enter the repository URL
+   - Choose a local folder
+
+#### Option 3: GitHub.com (Web-based)
+1. **Fork the repository**:
+   - Go to the repository on GitHub.com
+   - Click the "Fork" button in the top-right corner
+   - This creates your own copy of the repository
+2. **Edit files directly** in the GitHub web interface
+3. **Create pull requests** to contribute changes back
+
+### Running the Code
+
+1. **Install Python 3** from [python.org](https://python.org) if not already installed
+2. **Navigate to the project folder** (if using GitHub Desktop or VS Code)
+3. **Run the Hello World Program**:
    ```bash
    python hello_world.py
    ```
@@ -45,6 +75,121 @@ This repository is for students learning basic Python for the first time.
    ```
    Hello, World!
    ```
+
+### Complete GitHub Workflow Tutorial
+
+Follow these step-by-step instructions to contribute to the project:
+
+#### Step 1: Clone the Repository
+
+**Using GitHub Desktop:**
+1. Open GitHub Desktop
+2. Click "Clone a repository from the Internet"
+3. Go to the "URL" tab
+4. Paste the repository URL: `https://github.com/[username]/luit-sept-2025-silver-python`
+5. Choose where to save it on your computer
+6. Click "Clone"
+
+**Using VS Code:**
+1. Open VS Code
+2. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac)
+3. Type "Git: Clone" and select it
+4. Paste the repository URL
+5. Choose a folder to save it
+6. Click "Select Repository Location"
+
+**Using GitHub.com:**
+1. Go to the repository on GitHub.com
+2. Click the green "Code" button
+3. Click "Open with GitHub Desktop" or "Open with Visual Studio Code"
+
+#### Step 2: Create a New Branch
+
+**Using GitHub Desktop:**
+1. Click "Current branch" dropdown at the top
+2. Click "New branch"
+3. Name your branch (e.g., "my-feature" or "add-new-script")
+4. Click "Create branch"
+
+**Using VS Code:**
+1. Click the branch name in the bottom-left corner
+2. Click "Create new branch"
+3. Type your branch name
+4. Press Enter
+
+**Using GitHub.com:**
+1. Click the branch dropdown (usually says "main")
+2. Type a new branch name
+3. Click "Create branch: [name] from main"
+
+#### Step 3: Make Your Changes
+
+1. **Edit files** using your preferred method:
+   - GitHub Desktop: Right-click files → "Open with external editor"
+   - VS Code: Files open automatically
+   - GitHub.com: Click the pencil icon to edit
+
+2. **Add new files** if needed
+3. **Test your changes** by running the Python scripts
+
+#### Step 4: Commit Your Changes
+
+**Using GitHub Desktop:**
+1. You'll see your changes in the left panel
+2. Check the boxes next to files you want to commit
+3. Write a commit message (e.g., "Add new Python script for data processing")
+4. Click "Commit to [branch-name]"
+
+**Using VS Code:**
+1. Go to the Source Control panel (Ctrl+Shift+G)
+2. Click the "+" next to files you want to stage
+3. Type a commit message in the text box
+4. Press Ctrl+Enter to commit
+
+**Using GitHub.com:**
+1. Scroll to the bottom of the file you edited
+2. Write a commit message
+3. Click "Commit changes"
+
+#### Step 5: Push Your Changes
+
+**Using GitHub Desktop:**
+1. Click "Push origin" button at the top
+2. Your changes are now on GitHub
+
+**Using VS Code:**
+1. Click the "..." menu in Source Control
+2. Select "Push"
+3. Choose your branch if prompted
+
+**Using GitHub.com:**
+1. Changes are automatically saved when you commit
+2. No additional push needed
+
+#### Step 6: Create a Pull Request
+
+1. **Go to the repository on GitHub.com**
+2. **You'll see a yellow banner** saying "Compare & pull request"
+3. **Click "Compare & pull request"**
+4. **Fill out the form:**
+   - Title: Brief description of your changes
+   - Description: Explain what you changed and why
+5. **Click "Create pull request"**
+
+#### Step 7: Review and Merge
+
+1. **Wait for review** from project maintainers
+2. **Address any feedback** by making more commits
+3. **Once approved**, the maintainer will merge your changes
+4. **Your changes are now part of the main project!**
+
+### Quick Reference Commands
+
+- **Clone**: Get a copy of the repository
+- **Branch**: Create a separate workspace for your changes
+- **Commit**: Save your changes with a message
+- **Push**: Upload your changes to GitHub
+- **Pull Request**: Ask to merge your changes into the main project
 
 ## GitHub Actions Workflows
 
